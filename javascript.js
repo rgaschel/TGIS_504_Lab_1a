@@ -57,7 +57,7 @@ function onLocationError(e) {
 map.on('locationerror', onLocationError);
 
 L.easyButton( '<span class="star">&starf;</span>', function(){
-  alert('Click OK and allow the geolocation request to see your location on the map.  Again, this site will not store or share your location information.');
+  alert('Click OK to allow the geolocation request to see your location on the map.  Again, this site will not store or share your location information.');
 map.locate({setView: true, maxZoom: 16});
 }).addTo(map);
 
